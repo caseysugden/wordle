@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     createTiles();
+
+    // let fs = require('fs');
+    // let content = fs.readFileSync('words.txt', 'utf8');
+    // let words = content.split(/\r?\n/);
+    // let word = words[Math.floor(Math.random() * (words.length - 1))];
     
     let guessedWordsArr = [[]];
     let nextTile = 1;
@@ -64,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (currentWord === word) {
             setTimeout(() => {
-                window.alert(`Congradulations!`);
+                window.alert(`Congratulations!`);
             }, delay * 5);
         };
 
